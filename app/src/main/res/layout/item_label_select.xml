@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <CheckBox
+        style="@style/MyTextViewStyleButton"
+        android:id="@+id/cb_label_select"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center"
+        android:background="@drawable/shape_checkbox_selector"
+        android:button="@null"
+        android:text="玩android2群"
+        android:textColor="@color/textcolor_selector"/>
+</LinearLayout>

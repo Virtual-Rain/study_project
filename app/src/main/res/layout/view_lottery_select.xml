@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_please_select_tickets"
+        style="@style/MyTextViewStyleNormal"
+        android:text="@string/tv_please_select_tickets"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_label_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_please_select_tickets"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_common_select_all"
+        style="@style/MyTextViewStyleButton"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_button"
+        android:text="@string/tv_common_select_all"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view_label_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_common_inverse_select"
+        style="@style/MyTextViewStyleButton"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_button"
+        android:text="@string/tv_common_inverse_select"
+        app:layout_constraintLeft_toRightOf="@+id/tv_common_select_all"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view_label_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_common_select_clear"
+        style="@style/MyTextViewStyleButton"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_button"
+        android:text="@string/tv_common_select_clear"
+        app:layout_constraintLeft_toRightOf="@+id/tv_common_inverse_select"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view_label_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_selected_num"
+        style="@style/MyTextViewStyleNormal"
+        android:text="0/10"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_common_select_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_common_select_clear"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+//include ':app', ':agentweb-imitate', ':commonlibrary', ':module1', ':module2', ':annotationlib', ':lib_compiler'
+include ':app',  ':commonlibrary'
+rootProject.name='study_common'

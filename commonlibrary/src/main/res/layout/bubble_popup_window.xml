@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_black_rectangle"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_bubble_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未结注单的数量"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/cancel_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/shape_stoke_white"
+        android:text="知道了"
+        android:textSize="13sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">study_common</string>
+    <string name="tv_betting_record">投注记录</string>
+    <string name="tv_unpaid_bets">未结注单</string>
+    <string name="tv_completed_bets">已结注单</string>
+    <string name="tv_cancel_the_order">撤单</string>
+    <string name="tv_win_the_prize">中奖</string>
+    <string name="tv_total_record">全部记录</string>
+    <string name="tv_total_record_show">已全部显示</string>
+    <string name="tv_long_dragon_remind">长龙提醒彩种</string>
+    <string name="tv_long_dragon_remind_hint">16个彩种</string>
+    <string name="tv_minimum_number_of_consecutive_periods">最短连出期数</string>
+    <string name="tv_long_dragon_count_remind">长龙数量提示</string>
+    <string name="tv_missing_remind_setting">遗漏提醒设置</string>
+    <string name="tv_use_default_setting">使用默认设置</string>
+    <string name="tv_lottery_name">彩系名称</string>
+    <string name="tv_lottery_num">已选择{key}个彩种</string>
+    <string name="tv_lottery_not_selected">未选择彩种</string>
+    <string name="tv_common_cancel">取消</string>
+    <string name="tv_common_save">保存</string>
+    <string name="tv_common_select_all">全选</string>
+    <string name="tv_common_inverse_select">反选</string>
+    <string name="tv_common_select_clear">清空</string>
+    <string name="tv_please_select_tickets">请选择关注的彩种</string>
+
+</resources>

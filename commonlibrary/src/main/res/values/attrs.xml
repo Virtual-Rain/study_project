@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="bubble" tools:ignore="ResourceName">
+        <attr name="shadowColor" format="color" />
+        <attr name="padding" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="halfBaseOfLeg" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="UltraViewPager">
+        <attr name="upv_autoscroll" format="integer" />
+        <attr name="upv_infiniteloop" format="boolean" />
+        <attr name="upv_ratio" format="float" />
+        <attr name="upv_scrollmode" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="upv_disablescroll" format="enum">
+            <enum name="none" value="0" />
+            <enum name="backward" value="1" />
+            <enum name="forward" value="2" />
+        </attr>
+        <attr name="upv_multiscreen" format="float" />
+        <attr name="upv_automeasure" format="boolean" />
+        <attr name="upv_itemratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTabLayout">
+        <attr name="indicator_color_vertical" format="color" />
+        <attr name="indicator_drawable" format="reference" />
+        <attr name="indicator_color" format="color" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_corners" format="dimension" />
+        <attr name="indicator_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+            <enum name="fill" value="119" />
+        </attr>
+        <attr name="tab_margin" format="dimension" />
+        <attr name="tab_padding_left" format="dimension" />
+        <attr name="tab_padding_top" format="dimension" />
+        <attr name="tab_mode" format="enum">
+            <enum name="fixed" value="10" />
+            <enum name="scrollable" value="11" />
+        </attr>
+        <attr name="tab_height" format="dimension" />
+        <attr name="tab_padding" format="dimension" />
+        <attr name="tab_paddingStart" format="dimension" />
+        <attr name="tab_paddingTop" format="dimension" />
+        <attr name="tab_paddingEnd" format="dimension" />
+        <attr name="tab_paddingBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DropShadowViewGroup">
+        <attr name="dsvg_shadow_mode" format="enum">
+            <enum name="solid" value="0"/>
+            <enum name="blur" value="1"/>
+        </attr>
+        <attr name="dsvg_shadow_blur" format="dimension" />
+        <attr name="dsvg_shadow_color" format="color" />
+        <attr name="dsvg_shadow_width" format="dimension" />
+        <attr name="dsvg_shadow_start_width" format="dimension" />
+        <attr name="dsvg_shadow_top_width" format="dimension" />
+        <attr name="dsvg_shadow_end_width" format="dimension" />
+        <attr name="dsvg_shadow_bottom_width" format="dimension" />
+        <attr name="dsvg_shadow_cornor_radius" format="dimension" />
+        <attr name="dsvg_shadow_start_bottom_cornor_radius" format="dimension" />
+        <attr name="dsvg_shadow_end_bottom_cornor_radius" format="dimension" />
+        <attr name="dsvg_shadow_start_top_cornor_radius" format="dimension" />
+        <attr name="dsvg_shadow_end_top_cornor_radius" format="dimension" />
+    </declare-styleable>
+</resources>

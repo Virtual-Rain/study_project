@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hall_bg_white_10dp_select">
+
+    <TextView
+        android:id="@+id/tv_betting_issue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hall_bg_gray_10dp_select"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="加拿大     No.1487681"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:id="@+id/tv_betting_detail"
+        style="@style/MyTextViewStyleNormal"
+        android:drawableLeft="@mipmap/icon_complete"
+        android:text="投注详情"
+        android:textColor="@color/green"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_betting_issue" />
+
+    <LinearLayout
+        android:id="@+id/ll_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_betting_detail">
+
+        <TextView
+            android:id="@+id/tv_play_name"
+            style="@style/MyTextViewStyleNormal"
+            android:text="双"
+            android:textSize="@dimen/sp_20"
+           />
+
+        <TextView
+            android:id="@+id/tv_odds_of_winning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1中1.92"
+            />
+    </LinearLayout>
+
+
+    <com.study.commonlibrary.widget.EditTextWithIcon
+        android:id="@+id/et_betting_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:background="@drawable/hall_bg_white_select"
+        android:ems="10"
+        android:hint="最低5-最高30000"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_play"
+        app:layout_constraintLeft_toRightOf="@+id/ll_play"
+        app:layout_constraintTop_toTopOf="@+id/ll_play"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_bet_amount_str"
+        style="@style/MyTextViewStyleNormal"
+        android:layout_centerVertical="true"
+        android:text="下注金额："
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_balance"
+        app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_center" />
+
+    <TextView
+        android:id="@+id/tv_bet_amount"
+        style="@style/MyTextViewStyleNormal"
+        android:text="100"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_balance"
+        app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_center" />
+
+    <TextView
+        android:id="@+id/tv_balance_str"
+        style="@style/MyTextViewStyleNormal"
+        android:layout_centerVertical="true"
+        android:text="余额："
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        style="@style/MyTextViewStyleNormal"
+        android:text="800，800.00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_can_winning_str"
+        style="@style/MyTextViewStyleNormal"
+        android:layout_centerVertical="true"
+        android:text="可中："
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance" />
+
+    <TextView
+        android:id="@+id/tv_can_winning"
+        style="@style/MyTextViewStyleNormal"
+        android:text="800.00"
+        app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fast_betting_chips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@id/line_bottom" />
+
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:background="@color/color_line_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid_line_vertical_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btn_left"
+        style="@style/MyTextViewStyleButton"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/hall_bg_white_10dp_select"
+        android:text="取消"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guid_line_vertical_center"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_right"
+        style="@style/MyTextViewStyleButton"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_button_selector"
+        android:text="下注"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guid_line_vertical_center"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

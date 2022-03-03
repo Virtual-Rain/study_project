@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_60"
+        app:layout_constraintBottom_toTopOf="@+id/btn_clear"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/hall_bg_white_10dp_select"
+        android:text="清空"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_select_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/btn_clear"
+        android:background="@drawable/hall_bg_white_10dp_select"
+        android:text="全选"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn_select_all"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/hall_bg_gray_10dp_select"
+        android:text="保存"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

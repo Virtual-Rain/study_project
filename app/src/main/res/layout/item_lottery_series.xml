@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hall_bg_white_10dp_select">
+
+    <TextView
+        android:id="@+id/tv_lottery_name"
+        style="@style/MyTextViewStyleNormal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_lottery_name" />
+
+    <TextView
+        android:id="@+id/tv_lottery_num"
+        style="@style/MyTextViewStyleNormal"
+        android:layout_below="@+id/tv_lottery_name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_lottery_num" />
+
+    <com.study.common.widget.TextEditTextView
+        android:id="@+id/et_lottery"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_30"
+        android:layout_below="@+id/tv_lottery_num"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_button_selector" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".ViewPagerActivity">
+
+    <com.study.commonlibrary.widget.verticalTabLayout.VerticalTab2Layout
+        android:id="@+id/vertical_tabLayout"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:tab_height="50dp"
+        app:tab_padding="@dimen/dp_10"
+        app:indicator_color="#115E56"
+        android:layout_margin="@dimen/dp_10"
+        app:indicator_corners="6dp"
+        app:indicator_gravity="fill"
+        app:tab_margin="10dp"
+        app:tab_mode="scrollable"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vertical_viewpager"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" />
+</LinearLayout>

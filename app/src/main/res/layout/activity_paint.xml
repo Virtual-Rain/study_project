@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.study.common.widget.CanvasView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/path_test"
+        android:onClick="toMainActivity"
+        android:text="Main"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sample_bubble"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="bubbleChange"
+        android:text="start"
+        app:layout_constraintLeft_toRightOf="@+id/btn_main" />
+
+    <Button
+        android:id="@+id/btn_async_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="asyncTask"
+        android:text="AsyncTask"
+        app:layout_constraintLeft_toRightOf="@+id/btn_sample_bubble" />
+
+    <Button
+        android:id="@+id/btn_paint_reset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="bubbleTop"
+        android:text="-1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_async_task" />
+
+
+    <Button
+        android:id="@+id/btn_paint_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="paintType"
+        android:text="0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_paint_1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main" />
+
+    <Button
+        android:id="@+id/btn_paint_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="paintType"
+        android:text="1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_paint_0"
+        app:layout_constraintRight_toLeftOf="@+id/btn_paint_2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main" />
+
+    <Button
+        android:id="@+id/btn_paint_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="bubbleTop"
+        android:text="2"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_paint_1"
+        app:layout_constraintRight_toRightOf="@+id/btn_large_image"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main" />
+
+    <Button
+        android:id="@+id/btn_large_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="largeImage"
+        android:text="large"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_paint_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main" />
+
+    <com.study.common.widget.PaintTestView
+        android:id="@+id/paint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/line_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/btn_paint_2" />
+
+    <com.study.common.widget.SampleBubbleView
+        android:id="@+id/bubble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_horizontal" />
+
+    <com.study.common.widget.XfermodeView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_horizontal" />
+
+
+    <View
+        android:id="@+id/line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.study.common.widget.LargeImageView
+        android:id="@+id/large_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_paint_0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_title"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/shape_checkbox_selector"
+        android:button="@null"
+        android:elevation="@dimen/dp_5"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="玩android2群"
+        android:textColor="@color/textcolor_selector"
+        android:textStyle="bold" />
+</LinearLayout>

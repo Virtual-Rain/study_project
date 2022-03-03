@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hall_bg_white_10dp_select">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:gravity="center"
+        android:lines="3"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <View
+        android:id="@+id/line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="取消"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorHint"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_right"
+        app:layout_constraintTop_toBottomOf="@+id/line_horizontal" />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_left"
+        app:layout_constraintRight_toRightOf="@+id/btn_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="离开"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

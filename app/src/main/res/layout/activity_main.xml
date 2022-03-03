@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        tools:context=".MainActivity">
+        <Button
+            android:id="@+id/btn_basic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="userDialog"
+            android:text="基本使用"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_loading_no_cancel" />
+
+        <Button
+            android:id="@+id/btn_loading_no_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="loadingDialog"
+            android:text="加载中... (不能取消,5秒后自动隐藏)"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toRightOf="@+id/btn_basic"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="loadProgressDialog"
+            android:text="下载进度条"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_home_ad"
+            app:layout_constraintTop_toBottomOf="@+id/btn_loading_no_cancel" />
+
+        <Button
+            android:id="@+id/btn_home_ad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="homeAd"
+            android:text="首页广告"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/btn_download"
+            app:layout_constraintRight_toLeftOf="@+id/btn_share"
+            app:layout_constraintTop_toBottomOf="@+id/btn_loading_no_cancel" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="shareDialog"
+            android:text="底部分享"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/btn_home_ad"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_loading_no_cancel"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_portrait"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="changePortrait"
+            android:text="底部头像选择"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_viewpager"
+            app:layout_constraintTop_toBottomOf="@+id/btn_share"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_viewpager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="viewpager"
+            android:text="底部Viewpager"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/btn_portrait"
+            app:layout_constraintRight_toRightOf="@id/btn_long_dragon_remind"
+            app:layout_constraintTop_toBottomOf="@+id/btn_share"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_long_dragon_remind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="widthChange"
+            android:text="长龙提醒"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/btn_viewpager"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_share"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_missing_remind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="missingRemindAuto"
+            android:text="遗漏提醒"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_drawing"
+            app:layout_constraintTop_toBottomOf="@+id/btn_long_dragon_remind"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/ll_transfer_icon"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/radius_back"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_missing_remind"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/iv_arrow_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/icon_arrow_right" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_down"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/icon_arrow_left" />
+        </LinearLayout>
+
+        <com.study.common.widget.MyPointView
+            android:id="@+id/myPointView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <Button
+            android:id="@+id/btn_drawing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="drawing"
+            android:text="Drawing"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/btn_missing_remind"
+            app:layout_constraintRight_toLeftOf="@+id/btn_recycle"
+            app:layout_constraintTop_toBottomOf="@+id/btn_long_dragon_remind"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_recycle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="play"
+            android:text="Play"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/btn_drawing"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_long_dragon_remind"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tv_dotted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="华为虚线"
+            android:drawableBottom="@drawable/shape_gray_dotted_line"
+            android:paddingBottom="@dimen/dp_2"
+            android:textSize="@dimen/sp_20"
+            android:layerType="software"
+            app:layout_constraintEnd_toEndOf="@+id/btn_recycle"
+            app:layout_constraintStart_toStartOf="@+id/btn_recycle"
+            app:layout_constraintTop_toBottomOf="@+id/btn_recycle"  />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:background="@drawable/shape_gray_dotted_line"
+            app:layout_constraintTop_toBottomOf="@+id/btn_recycle" />
+        <TextView
+            android:id="@+id/tv_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_transfer_icon" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ll_transfer_icon" />
+
+        <include
+            layout="@layout/view_canvas_paint"
+            app:layout_constraintTop_toBottomOf="@+id/ll_transfer_icon"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_play"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dp_60"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rotate"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/ll_filter"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/ll_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="longRemind"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/tv_long_dragon_remind"
+                    style="@style/MyTextViewStyleNormal"
+                    android:layout_margin="@dimen/dp_1"
+                    android:text="@string/tv_long_dragon_remind" />
+
+                <TextView
+                    android:id="@+id/tv_long_dragon_remind_hint"
+                    style="@style/MyTextViewStyleNormal"
+                    android:layout_below="@+id/tv_long_dragon_remind"
+                    android:layout_margin="@dimen/dp_1"
+                    android:text="@string/tv_long_dragon_remind_hint" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/icon_up" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/rl_periods"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="periods"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/tv_number_of_periods"
+                    style="@style/MyTextViewStyleNormal"
+                    android:layout_margin="@dimen/dp_1"
+                    android:text="@string/tv_minimum_number_of_consecutive_periods" />
+
+                <TextView
+                    android:id="@+id/tv_number_of_periods_str"
+                    style="@style/MyTextViewStyleNormal"
+                    android:layout_below="@+id/tv_number_of_periods"
+                    android:layout_margin="@dimen/dp_1"
+                    android:text="2期" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/icon_up" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/rl_long_dragon"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="flingAnima"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/tv_long_dragon_count_remind"
+                    style="@style/MyTextViewStyleNormal"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp_1"
+                    android:text="@string/tv_long_dragon_count_remind" />
+
+                <com.study.commonlibrary.widget.SlideSwitch
+                    android:id="@+id/switch_remind"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    app:isOpen="true"
+                    app:shape="circle"
+                    app:themeColor="@color/green" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

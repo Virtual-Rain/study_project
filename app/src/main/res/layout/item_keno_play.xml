@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hall_bg_white_10dp_select"
+    android:clickable="true">
+
+    <com.study.common.widget.KenoPlayItemView
+        android:id="@+id/kbv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

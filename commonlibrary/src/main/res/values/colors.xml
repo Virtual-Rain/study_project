@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D22214</color>
+    <color name="colorPrimaryDark">#D22214</color>
+    <color name="colorAccent">#FEA12E</color>
+    <color name="windowBackground">#F2F2F2</color>
+    <color name="color_0000000">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#e50011</color>
+    <color name="pink">#CD2990</color>
+    <color name="violet">#CD6889</color>
+    <color name="tipTitleBlack">#212121</color>
+    <color name="tipMsgBlack">#434343</color>
+    <color name="tipLeftBlack">#9E9E9E</color>
+    <color name="tipRightRed">#F5273E</color>
+    <color name="tipDivider">#E8E8E8</color>
+    <color name="grayHalf">#C8C8C8</color>
+    <color name="colorBlue">#0000FF</color>
+    <color name="confirmColor">#FF6600</color>
+    <color name="color_7F7F7F">#997F7F7F</color>
+    <color name="green">#00CC00</color>
+    <color name="green_lite">#F0E68C</color>
+    <color name="green_fluor">#00FA9A</color>
+    <color name="dark_green">#008000</color>
+
+
+    <color name="color_0076FF">#0076FF</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#EFEFF4</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="divider_gray">#E0DFDF</color>
+    <color name="color_666666">#666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColorHint">#c6c6c6</color>
+
+    <!-- material_color -->
+    <color name="colorControlNormal">#FF78909C</color>
+    <color name="colorControlActivated">#FF03A9F4</color>
+    <color name="colorSwitchThumbNormal">#FF78909C</color>
+    <!-- <color name="colorPrimaryHalf">#9003A9F4</color> -->
+    <color name="color_1111111">#111111</color>
+    <color name="etuhong">#e50011</color>
+    <color name="gray_eeeeee">#eeeeee</color>
+
+    <color name="color_EEEEEE">#eeeeee</color>
+    <color name="color_c6c6c6">#c6c6c6</color>
+    <color name="color_CACACA">#CACACA</color>
+    <color name="color_EAEAEA">#EAEAEA</color>
+    <color name="color_E6687E">#E6687E</color>
+    <color name="color_686868">#686868</color>
+    <color name="color_A20200">#A20200</color>
+    <color name="color_484848">#484848</color>
+    <color name="color_007AFF">#007AFF</color>
+    <color name="color_5C9DF2">#5C9DF2</color>
+    <color name="color_4597F2">#4597F2</color>
+    <color name="color_383838">#383838</color>
+    <color name="color_DD2E34">#DD2E34</color>
+    <color name="color_AC4745">#AC4745</color>
+    <color name="color_E0DFDF">#E0DFDF</color>
+    <color name="halft_black">#99000000</color>
+    <color name="color_9f2c32">#9f2c32</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_FFF0F0F0">#51121C</color>
+    <color name="color_FF000033">#FF000033</color>
+    <color name="color_FF333333">#4A7803</color>
+    <color name="color_FFF10215">#FFF10215</color>
+    <color name="color_FF666666">#FF666666</color>
+    <color name="color_CCCCCC">#cccccc</color>
+    <color name="color_359ff2">#ff359ff2</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_6daced">#6daced</color>
+    <color name="color_4A7803">#4A7803</color>
+    <color name="color_E4393C">#E4393C</color>
+    <color name="color_0000FE">#0000FE</color>
+    <color name="color_FFD7001C">#D7001C</color>
+
+    <color name="color_51121C">#51121C</color>
+    <color name="color_273615">#273615</color>
+    <color name="color_11125F">#11125F</color>
+</resources>
